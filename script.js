@@ -12,19 +12,19 @@ const perguntas = [//abre a lista de objetos (itens)
         },
         {
             texto: "Não",
-            afirmação: "Porque Não"
+            afirmação: "Porque não"
         }
         ]
     },
     {
-        enunciado: "você usa IA frequentemente",
+        enunciado: "Você usa IA frequentemente",
         alternativas: [{
             texto: "Sim",
             afirmação: "Todos os dias"
         },
         {
             texto:"Não",
-            afirmação:"Horrível"
+            afirmação:"Não"
         }
         ]
     },
@@ -36,7 +36,7 @@ const perguntas = [//abre a lista de objetos (itens)
         },
         {
             texto: "Não",
-            afirmação: "não compensa"
+            afirmação: "Não compensa"
         }
         ]
     }
@@ -64,13 +64,15 @@ function mostraAlternativas() {
         caixaAlternativa.appendChild(botaoAlternativas);
     }
 }
-function respostasSelecionadas(opcaoSelecionadas){
-    const afirmacoes = opcaoSelecionadas.afirmação;
-    respostas = afirmação;
+function respostasSelecionadas(opcaoSelecionada){
+    const afirmacoes = opcaoSelecionada.afirmação;
+    respostas += afirmacoes + " ";
     posicao++;
     mostraPergunta();
 }
-function mostraPergunta(){
-    caixaPergunta.textContent = "Daqui a 10 anos ";
+function mostraResultado(){
+    caixaPergunta.textContent = "Confira suas respostas: ";
+    textoResultado.textContent = respostas; 
+    caixaAlternativa.textContent = "";
 }
 mostraPergunta();
