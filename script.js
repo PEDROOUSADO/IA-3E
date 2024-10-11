@@ -2,41 +2,42 @@ const caixaPrincipal = document.querySelector('.caixa-principal');
 const caixaPergunta = document.querySelector('.caixa-pergunta');
 const caixaAlternativa = document.querySelector('.caixa-alternativa');
 const caixaResultado = document.querySelector('.caixa-resultado');
+const textoResultado = document.querySelector('.texto-resultado');
 
 const perguntas = [//abre a lista de objetos (itens)
     {//abre o item
-        enunciado: "Você gosta da Inteligência Artificial?",
-        alternativas: [{
-            texto: "Sim",
-            afirmação: "Porque sim"
-        },
-        {
-            texto: "Não",
-            afirmação: "Porque não"
-        }
-        ]
-    },
-    {
-        enunciado: "Você usa IA frequentemente",
+        enunciado: "Você joga games frequentemente?",
         alternativas: [{
             texto: "Sim",
             afirmação: "Todos os dias"
         },
         {
-            texto:"Não",
-            afirmação:"Não"
+            texto: "Não",
+            afirmação: "Raramente"
         }
         ]
     },
     {
-        enunciado: "Você usa IA nos estudos",
+        enunciado: "Você conehce o streamer TCK",
         alternativas: [{
             texto: "Sim",
-            afirmação: "Nas provas e nas tarefas"
+            afirmação: "Sou muito fan"
+        },
+        {
+            texto:"Não",
+            afirmação:"não sei quem é"
+        }
+        ]
+    },
+    {
+        enunciado: "Você joga valorant",
+        alternativas: [{
+            texto: "Sim",
+            afirmação: "Sou muito bom "
         },
         {
             texto: "Não",
-            afirmação: "Não compensa"
+            afirmação: "Sou péssimo "
         }
         ]
     }
